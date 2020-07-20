@@ -1,6 +1,6 @@
 import { Example } from 'models/example';
 import { ExamplePatch } from 'models/example-patch';
-import { Env } from 'services/env'
+import { Config } from 'config';
 
 export interface ReadManyParams {
     id: string;
@@ -13,7 +13,7 @@ export interface DeleteParams {
 
 export class ExamplesSvc {
 
-    constructor(private _: Env) {}
+    constructor(private _: Config) {}
 
     public create(_example: Example): Promise<void> {
         throw new Error('Not implemented');
