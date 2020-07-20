@@ -10,7 +10,7 @@
       "strict": true,
       "baseUrl": "./src",
       "esModuleInterop": true,
-      "types": ["reflect-metadata", "jasmine"],
+      "types": ["jest", "jasmine", "node"],
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true
   },
